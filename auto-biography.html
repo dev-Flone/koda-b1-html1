@@ -4,11 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biography</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      p {
+        font-size: 1.15rem;
+      }
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: white;
+        background-color: black;
+      }
+    </style>
   </head>
-  <body>
+  <body
+    style="
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0.2);
+    "
+  >
     <header>
-      <h1 align="center">Biografi</h1>
-      <nav align="center">
+      <h1 style="text-align: center; font-size: 3rem">Biografi</h1>
+      <nav style="text-align: center">
+        <a href="index.html" style="font-weight: bold; float: left">Menu</a>
         <a href="#tentang">Tentang</a>
         <a href="#pendidikan">Pendidikan</a>
         <a href="#ttl">Tempat, tanggal lahir</a>
@@ -16,14 +43,14 @@
     </header>
     <main>
       <section>
-        <h3 id="tentang">Tentang aku</h3>
-        <p align="justify">
+        <h3 id="tentang" style="font-size: 1.5rem">Tentang aku</h3>
+        <p style="text-align: justify; text-indent: 2rem">
           Merupakan individu yang memiliki ketertarikan besar terhadap teknologi
           informasi, khususnya pengembangan perangkat lunak. Sedang mendalami
           berbagai teknologi, seperti JavaScript, React, Next.js, Java, dan
           database, serta mempelajari blockchain dan jaringan komputer.
         </p>
-        <p align="justify">
+        <p style="text-align: justify; text-indent: 2rem">
           Dalam proses belajarnya, Aku aktif membangun proyek nyata untuk
           meningkatkan keterampilan dan mengembangkan portofolio. Ia memiliki
           semangat belajar yang tinggi, menyukai praktik langsung, dan berusaha
@@ -32,20 +59,30 @@
         </p>
       </section>
       <section id="pendidikan">
-        <h3>Background Pendidikan</h3>
+        <h3 style="font-size: 1.5rem">Background Pendidikan</h3>
         <ol>
-          <li>SD Citra Islami (2006 - 2012)</li>
-          <li>SMP Citra Islami (2012 - 2013)</li>
-          <li>SMP N 4 Demak (2013 - 2015)</li>
-          <li>SMA N 1 Demak (2015 - 2018)</li>
+          <li>
+            <span style="font-weight: bold">SD Citra Islami</span> (2006 - 2012)
+          </li>
+          <li>
+            <span style="font-weight: bold">SMP Citra Islami</span> (2012 -
+            2013)
+          </li>
+          <li>
+            <span style="font-weight: bold">SMP N 4 Demak</span> (2013 - 2015)
+          </li>
+          <li>
+            <span style="font-weight: bold">SMA N 1 Demak</span> (2015 - 2018)
+          </li>
         </ol>
       </section>
       <aside id="ttl">
-        <h3>Tempat, Tanggal Lahir</h3>
+        <h3 style="font-size: 1.5rem">Tempat, Tanggal Lahir</h3>
         <p>Tangerang, 05 November 2000</p>
       </aside>
-      <a href="index.html">Menu</a>
     </main>
-    <footer align="center">Build while sleepy @Kairn</footer>
+    <footer style="text-align: center; letter-spacing: 5px">
+      Build while sleepy @Kairn
+    </footer>
   </body>
 </html>
